@@ -16,7 +16,7 @@ public class SortHeightMapper extends Mapper<Object, Text, FloatWritable, Text>{
                 Text tec=new Text(line_tokens[11] + " - " + line_tokens[2] + " " + line_tokens[3] + " (" + line_tokens[4] + ")");
                 context.write(acc, tec);
             } catch (NumberFormatException ex) {
-                // If the value is not a float, skip by catching the error from the parseFloat() method
+             
             }
         } current_line++;
     }
